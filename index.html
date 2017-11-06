@@ -3,27 +3,44 @@
 <html lang="nl">
 
 <head>
+
 <style>
 #demo { color:red; }
 .colortext { color: orange; }
+
 body {
-    background-color: lightblue;
+   background-color: lightblue;    
 }
 
 h1 {
+    background-color: black;
     color: white;
     text-align: center;
+    border-style: dotted;
+    border-width: 4px;
+    border-color: red;
 }
 
 p {
     font-family: verdana;
-    font-size: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+div {
+    float: left;
+    width: 25%;
+    padding: 25px;
+    border: 15px solid navy;
+    transistion: width 2s ease-in-out 0.5s;
+}
+div:hover {
+   width: 500px;
 }
 </style>
 <title>Lekker makkelijk</title>
-<p> Welkom </p>
-<p class="colortext">gebruik van class</p>
-<p class="colortext">tekst kleur</p>
+
+<p class="colortext">Laat je inspireren</p>
+
 <meta charset="utf-8">
 <meta name="description" content="Makkelijke toepasbare inspiratie in jouw keuken">
 <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -37,6 +54,7 @@ p {
 
 <nav>
 <ul>
+
 <li><a href="index.html">Home</a></li>
 <li><a href="keuken essentials.html">Wie zijn wij</a></li>
 <li><a href="basis ingredienten.html">Hobby’s</a></li>
@@ -71,7 +89,7 @@ onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
 
 
-<p id="demo">JavaScript can change the style of an HTML element.</p>
+<p id="demo">Aan de slag!</p>
 
 <script>
 function myFunction() {
@@ -91,7 +109,7 @@ document.getElementById("image").src = "pic_mountain.jpg";
 </script>
 //-->
 <h1>eerste recept</h1>
-<p>Recepten op deze website zijn een benadering en niet nauwkeurig omdat ik zelf nooit recepten volg. Ze nodigen je uit om te experimenteren in de keuken en geven alleen kaders waarbinnen je vrij kunt mixen en varieren. </p>
+<li>Recepten op deze website zijn een benadering en niet nauwkeurig omdat ik zelf nooit recepten volg. Ze nodigen je uit om te experimenteren in de keuken en geven alleen kaders waarbinnen je vrij kunt mixen en varieren. </li>
 
 <ul>
 <li>Pompoensoep.</li>
@@ -99,19 +117,33 @@ document.getElementById("image").src = "pic_mountain.jpg";
 <li>Hartige taarten.</li>
 </ul>
 
-<p>Laten we beginnen met soepen. Er is geen makkelijkere manier om veel groentes binnen te krijgen. </p>
-
-<img alt="roos" src="http://www.mijn-eigen-website.nl/images/roos.gif" style="float: right;">
+<li>Laten we beginnen met soepen. Er is geen makkelijkere manier om veel groentes binnen te krijgen. </li>
 <h2>Recepten</h2>
-<p>Pompoensoep.</p>
 
-<ol>
+<div id="recept1"><ol>
+<h2>Pompoensoep</h2>
 <li>Slacht eerst de pompoen met een scherp mes.</li>
 <li>Wanneer je nog aardappels of zoete aardappelen hebt gooi je die er ook maar bij.</li>
 <li>Wortelen kunnen er ook in.</li>
 </ol>
 <p> Kook de ingredienten even voor. </p>
-
+</div>
+<div id="recept2"><ol>
+<h2>Pompoensoep</h2>
+<li>Slacht eerst de pompoen met een scherp mes.</li>
+<li>Wanneer je nog aardappels of zoete aardappelen hebt gooi je die er ook maar bij.</li>
+<li>Wortelen kunnen er ook in.</li>
+</ol>
+<p> Kook de ingredienten even voor. </p>
+</div>
+<div id="recept3"><ol>
+<h2>Pompoensoep</h2>
+<li>Slacht eerst de pompoen met een scherp mes.</li>
+<li>Wanneer je nog aardappels of zoete aardappelen hebt gooi je die er ook maar bij.</li>
+<li>Wortelen kunnen er ook in.</li>
+</ol>
+<p> Kook de ingredienten even voor. </p>
+</div>
 </article> 
 
 <footer>
