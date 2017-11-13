@@ -7,7 +7,7 @@
   
   <style>
     background-color: lightblue;
-    color: white;
+    text-color: white;
     text-align: center;
     border-style: dotted;
     border-width: 6px;
@@ -25,5 +25,21 @@
       </form>
     </div>
   </section>
+
+<p> En nu met Angular </p>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+Name: <input ng-model="name">
+<h1>Welkom bij de Dinerclub {{name}}!</h1>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = "Saskia Vening";
+});
+</script>
+
 </body>
 </html>
