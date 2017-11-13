@@ -42,10 +42,10 @@ app.controller('myCtrl', function($scope) {
     $scope.name = "Saskia Vening";
 });
 </script>
-  
+ 
+<p> Selecteer de maand </p>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <p> Selecteer de maand </p>
-
+ 
 <div ng-app="myApp" ng-controller="myCtrl">
 <select ng-model="selectedName" ng-options="x for x in names">
 </select>
@@ -54,7 +54,7 @@ app.controller('myCtrl', function($scope) {
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
-    $scope.names = ["Januari", 'Februari', "Maart", "April", "Mei", "Juni", "Juli"];
+    $scope.names = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli"];
 });
 </script>
 
